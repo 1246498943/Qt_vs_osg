@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>osgRenderClass</class>
+ <widget class="QMainWindow" name="osgRenderClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>680</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>osgRender</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QtOSGScene" name="sceneview" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+background-color:rgb(185,185,185);
+
+}</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>680</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>添加模型</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionadd_asc_file"/>
+    <addaction name="separator"/>
+    <addaction name="actionadd_osgt_file"/>
+    <addaction name="separator"/>
+    <addaction name="actionadd_model_file"/>
+    <addaction name="separator"/>
+    <addaction name="action_add_Drawable"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionadd_asc_file">
+   <property name="text">
+    <string>add .asc file</string>
+   </property>
+  </action>
+  <action name="actionadd_osgt_file">
+   <property name="text">
+    <string>add .osgt file</string>
+   </property>
+  </action>
+  <action name="actionadd_model_file">
+   <property name="text">
+    <string>add.model file</string>
+   </property>
+  </action>
+  <action name="actionadd_DrawAble_model">
+   <property name="text">
+    <string>add DrawAble model</string>
+   </property>
+  </action>
+  <action name="action_add_Drawable">
+   <property name="text">
+    <string>_add.Drawable</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QtOSGScene</class>
+   <extends>QWidget</extends>
+   <header location="global">QtOSGScene.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="osgRender.qrc"/>
+ </resources>
+ <connections/>
+</ui>

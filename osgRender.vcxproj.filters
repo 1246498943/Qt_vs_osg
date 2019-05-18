@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="界面渲染">
+      <UniqueIdentifier>{b66ca032-68ff-44ba-a611-11f50653e95b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="文件读取">
+      <UniqueIdentifier>{e7db20f1-17e8-4994-8868-b08fd1e6af1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面渲染\Headers">
+      <UniqueIdentifier>{d97e7a5c-8d07-4300-afa2-3a15e7e7524c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面渲染\SourceFIles">
+      <UniqueIdentifier>{05e4e7da-166c-46f4-9bad-49c2213fff83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="osgRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileOperaterClass.cpp">
+      <Filter>文件读取</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonFunctions.cpp">
+      <Filter>界面渲染\SourceFIles</Filter>
+    </ClCompile>
+    <ClCompile Include="Manipulator.cpp">
+      <Filter>界面渲染\SourceFIles</Filter>
+    </ClCompile>
+    <ClCompile Include="OSGScanModel.cpp">
+      <Filter>界面渲染\SourceFIles</Filter>
+    </ClCompile>
+    <ClCompile Include="QtOSGScene.cpp">
+      <Filter>界面渲染\SourceFIles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="osgRender.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="OSGScanModel.h">
+      <Filter>界面渲染\Headers</Filter>
+    </QtMoc>
+    <QtMoc Include="QtOSGScene.h">
+      <Filter>界面渲染\Headers</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="osgRender.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="osgRender.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileOperaterClass.h">
+      <Filter>文件读取</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonFunctions.h">
+      <Filter>界面渲染\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Manipulator.h">
+      <Filter>界面渲染\Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
